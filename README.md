@@ -1,84 +1,96 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+# Final Assignment: Multipage Developer Portfolio
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+This repository contains the final project for Week 8, demonstrating the planning, coding, organization, and deployment of a responsive, multi-page static website.
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+The website serves as a Personal Developer Portfolio to showcase core front-end skills, including semantic HTML5 structure, responsive CSS3 design, and client-side JavaScript interactivity.
 
----
+## Live Website URL
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+The project has been successfully deployed and is accessible at the following URL:
 
-Before you write any code, take time to plan:
+**LIVEURLPLACEHOLDER:** Insert your GitHub Pages/Netlify/Vercel URL here
 
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
+## Project Structure and Planning (Part 1 & 3)
 
-**Goal:** Show intentional structure and user journey across the site.
+The site is built around a clear, navigable structure consisting of three core pages, utilizing industry standard organization practices.
 
----
+### File Organization (Best Practice)
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+The codebase is organized into dedicated directories for maximum maintainability:
 
-Using your plan, begin building:
+```
+/root
+├── index.html          (Home Page)
+├── projects.html       (Projects Showcase)
+├── contact.html        (Contact Form & Validation)
+├── README.md           (This documentation)
+├── /css                (External Stylesheets)
+│   └── style.css       (All core styles and media queries)
+├── /js                 (External Scripts)
+│   └── script.js       (All JavaScript interactivity)
+└── /images             (All image assets)
+```
 
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
+## Getting Started (Running Locally)
 
-Each page should:
+To run and view this project on your local machine, follow these simple steps:
 
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
+### Clone the Repository:
 
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+```bash
+git clone git@github.com:IsaacDev14/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git
+```
 
----
+### Navigate to the Project Directory:
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+```bash
+cd git@github.com:IsaacDev14/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git
+```
 
-Before deployment, refactor your project to follow production-friendly practices:
+### Open the Index File:
 
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
+Locate the `index.html` file in the root of the project folder and open it using any modern web browser (e.g., Chrome, Firefox, Safari).
 
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+Alternatively, you can use a local web server (like VS Code's Live Server extension) for a better development experience.
 
----
+## Page Outlines
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
+### Home (index.html)
 
-Once your project is complete, choose a method to **host your site online**.
+* **Purpose:** Introduction and overview of skills.
+* **Key Content:** Hero section, skills grid, and mission statement.
+* **Interactivity Focus:** Subtle CSS hover effects and layout transitions.
 
-You can use:
+### Projects (projects.html)
 
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
+* **Purpose:** Showcase of relevant work.
+* **Key Content:** Grid display of project cards, descriptions, and technology tags.
+* **Interactivity Focus:** Consistent header/footer structure across all pages.
 
-Deploy your project and confirm that:
+### Contact (contact.html)
 
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
+* **Purpose:** Method for potential clients/employers to connect.
+* **Key Content:** Detailed contact form.
+* **Interactivity Focus:** JavaScript form validation.
 
-**Goal:** Publish your work online and make it accessible to the world.
+## Technical Implementation (Part 2)
 
----
+### HTML5 for Semantic Structure
 
-## Deliverables
+All pages use modern HTML5 semantic elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`) to ensure accessibility and clear document outlines.
 
-1. A GitHub repository containing:
+### Responsive CSS3 Styling
 
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
+* **Mobile-First Approach:** Base styling in `css/style.css` is optimized for small screens first.
+* **Layout:** CSS Flexbox and Grid were used extensively to create flexible layouts.
+* **Media Queries:** A primary breakpoint (768px) adjusts navigation and grid layouts between mobile and desktop views.
 
----
+### JavaScript Interactivity
+
+The `js/script.js` file handles two main interactive requirements:
+
+* **Form Validation:** Prevents submission until required fields (Name, Email, Subject, Message) meet criteria (including regex email validation).
+* **Mobile Menu Toggle:** Click listener on the hamburger icon toggles navigation links on smaller screens for smooth mobile UX.
 
 ## Outcome
 

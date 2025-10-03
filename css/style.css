@@ -1,0 +1,343 @@
+/* GLOBAL STYLES AND RESETS */
+:root {
+    --primary-color: #3b82f6; /* Blue */
+    --secondary-color: #1f2937; /* Dark Gray */
+    --accent-color: #f59e0b; /* Amber */
+    --background-light: #f9fafb;
+    --text-dark: #111827;
+    --text-light: #ffffff;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --max-width: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem; /* Consistent padding for mobile */
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* HEADER AND NAVIGATION */
+header {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 0.5rem 0;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Mobile Menu Toggle (Hidden on large screens) */
+.menu-toggle {
+    display: none; /* Hide on desktop */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: var(--secondary-color);
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 3rem;
+}
+
+
+/* HOME PAGE SECTIONS */
+
+.hero-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.tagline {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #4b5563;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #fcd34d;
+}
+
+.hero-image {
+    display: none; /* Mobile first: hide large image */
+}
+
+.expertise-section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.expertise-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.expertise-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr; /* Mobile: single column */
+}
+
+.skill-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.vision-section {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.vision-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* PROJECTS PAGE STYLES */
+
+.project-showcase {
+    padding: 3rem 0;
+}
+
+.project-showcase h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #6b7280;
+}
+
+.project-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr; /* Mobile: single column */
+}
+
+.project-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.project-tags span {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+
+/* CONTACT FORM STYLES */
+.contact-section {
+    padding: 3rem 0;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.error-message {
+    color: #ef4444; /* Red */
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    min-height: 1.25rem; /* Prevents layout jump */
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #2563eb;
+}
+
+
+/* MEDIA QUERIES (Desktop/Tablet Layouts) */
+@media (min-width: 768px) {
+    /* HEADER: Show navigation links */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* HOME PAGE */
+    .hero-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        text-align: left;
+        gap: 4rem;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .hero-image {
+        display: block;
+        max-width: 100%;
+    }
+
+    .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .vision-section {
+        flex-direction: row;
+        text-align: left;
+        gap: 4rem;
+    }
+    
+    .vision-image {
+        max-width: 400px;
+        order: 2;
+    }
+    
+    .vision-content {
+        order: 1;
+    }
+
+    /* PROJECTS PAGE */
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
