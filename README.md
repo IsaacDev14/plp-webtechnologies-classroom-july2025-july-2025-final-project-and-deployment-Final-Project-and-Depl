@@ -8,7 +8,6 @@ The website serves as a Personal Developer Portfolio to showcase core front-end 
 
 The project has been successfully deployed and is accessible at the following URL:
 
-**LIVEURLPLACEHOLDER:** Insert your GitHub Pages/Netlify/Vercel URL here
 
 ## Project Structure and Planning (Part 1 & 3)
 
